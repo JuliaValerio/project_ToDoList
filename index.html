@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="icon" href="./img/icon_check.png" type="image/gif" sizes="16x16">
+    <title>To Do List</title>
+</head>
+<body>
+    
+    <section class="container">
+
+        <h3>Adicione uma nova tarefa</h3>
+        <input type='text' id='tarefa'>
+        <button id="btn_add" class="btn">ADD</button>
+
+        <div>
+            <ul id="lista_tarefa" class="lista_tarefa" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </ul>
+        </div>
+        
+
+        <div class="action">
+            <button class="btn" id="btn_remove">Remover todos</button>
+            <button class="btn" id="btn_all">Marcar todos</button>
+        </div>
+        
+    </section>    
+
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>

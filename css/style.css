@@ -1,0 +1,117 @@
+* {
+
+    margin:  0;
+    padding: 0;
+}
+
+body{
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+input{
+    height: 55px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3{
+    margin: 1rem;
+}
+
+span{
+    margin-left: 1rem;
+}
+.lista_tarefa{
+    max-width: 100%;
+    font-size: 16px;
+    margin:20px;
+    
+}
+
+.tarefa{
+    display: flex;
+    justify-content: space-between; 
+    width:100%;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    background: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 0.2rem;
+}
+
+.btn {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: #ba7af8;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: solid 10px #b527d1;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.49); 
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.btn_exit{
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-shadow: 2px 1px white; 
+    background: transparent;
+    justify-content: flex-end;
+}
+
+.btn:hover, .btn_exit:hover {
+    background-color: rgba(201, 22, 171, 0.733); 
+    text-shadow: 2px 1px rgba(8, 7, 7, 0.733);
+    cursor: pointer !important;
+    color: white;
+  }
+
+  .btn:active, .btn_exit:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+  }
+
+  .action{
+      display: flex;
+      justify-content: space-evenly;
+      margin: 1rem;
+      font-family: 'Open Sans', sans-serif;
+  }
+
+.riscado{
+    /*text-decoration: line-through;*/
+    color: rgba(0, 230, 64, 1);
+    font-weight: bold;
+    font-style: italic;
+}
+.riscado::before{
+    content:'✓  ';
+}
+
