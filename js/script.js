@@ -8,6 +8,13 @@ const btnAll = document.getElementById('btn_all');
  *                                EventListners                                  *
  ********************************************************************************/
 //botao adicionar, quando clica adiciona tarefa.
+
+document.addEventListener('keypress', function(e){
+    if(e.which == 13){
+        criaLI();
+    }
+  }, false);
+
 btnAdd.addEventListener('click', function () {
 
     inputTexto = inputTarefa.value.trim();
